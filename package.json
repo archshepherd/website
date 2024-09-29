@@ -1,0 +1,8 @@
+{
+  "name": "archshepherd-website",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "mkdir -p dist && find . -maxdepth 1 -not -name 'dist' -not -name '.' -exec cp -r {} dist/ \\;"
+  },
+  "dependencies": {}
+}
