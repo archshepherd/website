@@ -3,87 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edmir Taipi</title>
+    <title>Arch Shepherd International LLC</title>
     <style>
+        /* Define brand colors */
+        :root {
+            --primary-color: #8E7B5D; /* Primary color from brand guidelines */
+            --secondary-color: #3E3A35; /* Secondary color from brand guidelines */
+            --background-color: #B8B5AC; /* Background color */
+            --text-color: #333333; /* Text color */
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: white;
-            color: black;
+            font-family: 'Source Serif Pro', serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
+
+        /* Header styles */
         header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 20px;
             text-align: center;
-            margin-bottom: 40px;
         }
-        h1 {
-            font-size: 2.5em;
+
+        header img {
+            max-width: 250px; /* Adjust the size of the logo */
+            height: auto;
         }
-        h2 {
-            font-size: 2em;
-            margin-top: 30px;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.5;
-        }
+
+        /* Navigation styles */
         nav {
+            background-color: var(--secondary-color);
+            padding: 10px;
             text-align: center;
-            margin-bottom: 20px;
         }
+
         nav a {
+            color: #ffffff;
             margin: 0 15px;
             text-decoration: none;
-            color: black;
+            font-weight: bold;
         }
-        form {
-            margin-top: 20px;
+
+        nav a:hover {
+            text-decoration: underline;
         }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid black;
-            border-radius: 5px;
+
+        /* Section styles */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
         }
-        button {
-            background-color: black;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+
+        .content-section {
+            padding: 40px 0;
         }
-        button:hover {
-            background-color: gray;
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Edmir Taipi</h1>
+    <!-- Header with Logo -->
+    <header>
+        <img src="assets/logo.png" alt="Arch Shepherd International Logo"> <!-- Replace with the path to your logo image -->
+    </header>
+
+    <!-- Navigation Menu -->
     <nav>
-        <a href="https://about.me/edmirtaipi" target="_blank">About Me</a>
-        <a href="#contact">Contact</a>
-        <a href="https://medium.edmirtaipi.com/" target="_blank">Medium</a>
+        <a href="#about">About Us</a>
+        <a href="#vision">Our Vision</a>
+        <a href="#mission">Our Mission</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#privacy">Privacy Policy</a>
     </nav>
-</header>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>Welcome to my personal webpage!</p>
-</section>
+    <!-- Page Sections -->
+    <div class="container">
+        <!-- About Us Section -->
+        <section id="about" class="content-section">
+            <h2>About Us</h2>
+            <p>Arch Shepherd International LLC is a leader in disaster management technology, providing innovative solutions to foster safer and more connected communities worldwide.</p>
+        </section>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <form action="mailto:contact@edmirtaipi.com" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+        <!-- Our Vision Section -->
+        <section id="vision" class="content-section">
+            <h2>Our Vision</h2>
+            <p>To be the global leader in disaster management technology, fostering stronger, safer, and more connected communities.</p>
+        </section>
+
+        <!-- Our Mission Section -->
+        <section id="mission" class="content-section">
+            <h2>Our Mission</h2>
+            <p>Empowering communities through innovative disaster management solutions leveraging local expertise to enhance safety and resilience worldwide.</p>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="content-section">
+            <h2>Contact Us</h2>
+            <p>For inquiries, partnerships, or support, please contact us at: <a href="mailto:info@archshepherd.com">info@archshepherd.com</a>.</p>
+        </section>
+
+        <!-- Privacy Policy Section -->
+        <section id="privacy" class="content-section">
+            <h2>Privacy Policy</h2>
+            <p>We value your privacy and are committed to protecting your personal data. Please read our detailed privacy policy [link to full policy if available].</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Arch Shepherd International LLC. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
